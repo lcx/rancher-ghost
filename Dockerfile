@@ -1,4 +1,4 @@
-FROM ghost:0.8.0
+FROM ghost:0.11
 MAINTAINER Sebastien LANGOUREAUX <linuxworkgroup@hotmail.com>
 
 
