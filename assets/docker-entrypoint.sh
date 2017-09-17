@@ -20,7 +20,7 @@ if [[ "$*" == node*current/index.js* ]]; then
   done
 
   cd /app && ./configure.sh
-  ln -sf /app/config.json $GHOST_INSTALL/current/core/server/config/env/config.production.json
+  ln -sf /app/config.json $GHOST_INSTALL/config.production.json
 
   cd $GHOST_INSTALL && knex-migrator-migrate --init --mgpath "$GHOST_INSTALL/current"
 fi
