@@ -1,0 +1,38 @@
+{
+  "url": "GHOST_URL",
+  "server": {
+    "port": 2368,
+    "host": "0.0.0.0"
+  },
+  "database": {
+    "client": "mysql",
+    "connection": {
+      "host": "DB_HOST",
+      "user": "DB_USER",
+      "password": "DB_PASS",
+      "database": "DB_DATABASE"
+    }
+  },
+  "mail": {
+      "transport": "SMTP",
+      "options": {
+          "host": "MAIL_HOST",
+          "port": MAIL_PORT,
+          "service": "SMTP",
+          "auth": {
+              "user": "MAIL_USER",
+              "pass": "MAIL_PASSWORD"
+          }
+      }
+  },
+  "logging": {
+    "transports": [
+      "file",
+      "stdout"
+    ]
+  },
+  "process": "systemd",
+  "paths": {
+    "contentPath": "/var/lib/ghost/content"
+  }
+}

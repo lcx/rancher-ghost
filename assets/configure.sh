@@ -1,0 +1,10 @@
+#!/bin/bash
+sed -i config.json -e s,GHOST_URL,$GHOST_URL,
+sed -i config.json -e s,DB_HOST,$DB_HOST,
+sed -i config.json -e s,DB_USER,$DB_USER,
+sed -i config.json -e s,DB_PASS,$DB_PASS,
+sed -i config.json -e s,DB_DATABASE,$DB_DATABASE,
+sed -i config.json -e s,MAIL_HOST,$MAIL_HOST,
+sed -i config.json -e s,MAIL_PORT,$MAIL_PORT,
+sed -i config.json -e s,MAIL_USER,$MAIL_USER,
+sed -i config.json -e s,MAIL_PASSWORD,$MAIL_PASSWORD,
